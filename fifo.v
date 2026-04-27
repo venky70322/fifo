@@ -36,7 +36,7 @@ always @(posedge clk or posedge rst) begin
             rptr <= rptr + 1;
             count <= count - 1;
         end
-
+//------
         full  <= (count == 4);
         empty <= (count == 0);
     end
